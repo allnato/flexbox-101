@@ -1,0 +1,27 @@
+{
+  "name": "flexbox-101",
+  "homepage": "https://github.com/Ollen/flexbox-101",
+  "authors": [
+    "Allendale Nato <natoallendale@gmail.com>"
+  ],
+  "description": "A simple flexbox guide",
+  "main": "",
+  "keywords": [
+    "flexbox",
+    "css",
+    "bootstrap",
+    "html5"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "bootstrap": "^3.3.7"
+  }
+}
