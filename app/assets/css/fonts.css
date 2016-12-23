@@ -1,0 +1,8 @@
+@font-face{
+	font-family: 'Space Mono';
+	src: url('SpaceMono-Regular.eot');
+	src: url('SpaceMono-Regular.eot?iefix') format('eot'),
+	     url('SpaceMono-Regular.woff') format('woff'),
+	     url('SpaceMono-Regular.ttf') format('truetype'),
+	     url('SpaceMono-Regular.svg#SpaceMono-Regular') format('svg');
+}
