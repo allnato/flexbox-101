@@ -1,0 +1,72 @@
+html, body, .wrapper, .content, .main{
+  height: 100%;
+}
+
+.property-sidebar{
+  font-family: 'Space Mono';
+}
+
+.property-sidebar li>a{
+  font-size: 1.1em;
+}
+
+.property-sidebar li.active>a{
+  background-color: #673ab7 !important;
+}
+
+.property-sidebar h3{
+  color: #673ab7;
+}
+
+.value-nav{
+  min-height: 15%;
+}
+
+.canvas{
+  min-height: 75%;
+  display: flex;
+  border-radius: 10px;
+  background-color: #009688;
+  padding: 30px;
+
+  margin-bottom: 25px;
+}
+
+.main h2{
+  color: #E91E63;
+}
+
+.main p{
+  font-family: 'Space Mono';
+  font-size: 1.1em;
+}
+
+label.checkbox-inline{
+  font-family: 'Space Mono';
+  font-size: 1.2em;
+  font-weight: bolder;
+}
+
+.child-maker{
+  padding: 15px;
+}
+
+
+.child-card{
+  width: 20rem;
+  height: 20rem;
+  background-color: white;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.sliders, .create{
+  display: inline-block;
+}
+
+.sliders{
+  margin-right: 15px;
+}
+
+#slider-width .slider-selection, #slider-height .slider-selection{
+  background: #03a9f4;
+}

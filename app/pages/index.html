@@ -7,11 +7,75 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Flexbox-101</title>
 
+    <!-- Load Bootstrap -->
+    <link rel="stylesheet" href="../assets/bootstrap/dist/css/bootstrap.min.css" media="screen">
+    <!-- Load Space Mono -->
     <link rel="stylesheet" href="../assets/css/fonts.css" media="screen">
+    <!-- Load Page CSS -->
+    <link rel="stylesheet" href="../assets/css/intro.css" media="screen">
   </head>
 
   <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#flex-nav" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <span class="glyphicon glyphicon-th-large" aria-hidden="true"></span> Flexbox-101
+          </a>
+        </div>
 
+        <!-- Navigation Link -->
+        <div class="collapse navbar-collapse" id="flex-nav">
+          <ul class="nav navbar-nav">
+            <li><a href="">Flex Container</a></li>
+            <li><a href="">Flex Item</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <h1 class="space-mono">What is Flexbox?</h1>
+      <hr>
+      <p class="space-mono"><code>Flexbox</code> is a layout module designed to improve the alignment and distribution of items within a container efficiently even if the item's size is not defined and/or dynamic.</p>
+
+      <h2 class="space-mono">Usage</h2>
+      <hr>
+      <p>
+        <pre>
+.flex-container{
+  display: flex;
+}
+        </pre>
+      </p>
+
+      <h2>When to use flexbox</h2>
+      <hr>
+      <blockquote cite="http://">
+        <p>Flexbox is best used in scaling, aligning, and re-ordering of elements within a container. These are best used on page components within a parent element. There are plenty of other uses of flexbox, like changing the direction of a column or row.</p>
+        <footer>www.brolik.com</footer>
+      </blockquote>
+
+      <h2>When not to use flexbox</h2>
+      <hr>
+      <blockquote cite="http://">
+        <p>
+          Don’t use flexbox for page layout. A basic grid system using percentages, max-widths, and media queries is a much safer approach for creating responsive page layouts. Optimally you’d use a grid system in conjunction with flexbox to achieve the most responsive website. Furthermore, because the flexbox layout is dependent upon content, issues can arise as the page loads.
+        </p>
+        <footer>www.brolik.com</footer>
+      </blockquote>
+
+    </div>
   </body>
+
+  <script src="../assets/jquery/dist/jquery.min.js" charset="utf-8"></script>
+  <script src="../assets/bootstrap/dist/js/bootstrap.min.js" charset="utf-8"></script>
 
 </html>

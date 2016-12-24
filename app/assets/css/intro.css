@@ -1,0 +1,15 @@
+p{
+  font-size: 1.3em;
+}
+
+pre{
+  font-size: 1.2em;
+}
+
+h1,h2,p{
+  font-family: 'Space Mono';
+}
+
+blockquote > p{
+  font-size: 1em;
+}
