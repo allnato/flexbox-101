@@ -62,11 +62,22 @@ label.checkbox-inline{
 .child-card{
 
   margin: 20px;
+  position: relative;
 
   width: 20rem;
   height: 20rem;
   background-color: white;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.child-card h1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+
+  font-weight: bold;
 }
 
 
