@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flexbox-101</title>
+
+    <!-- Load Bootstrap -->
+    <link rel="stylesheet" href="../assets/bootstrap/dist/css/bootstrap.min.css" media="screen">
+    <!-- Load Bootstrap Slider -->
+    <link rel="stylesheet" href="../assets/seiyria-bootstrap-slider/dist/css/bootstrap-slider.min.css">
+    <!-- Load Space Mono -->
+    <link rel="stylesheet" href="../assets/css/fonts.css" media="screen">
+    <!-- Load Page CSS -->
+    <link rel="stylesheet" href="../assets/css/container.css" media="screen">
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#flex-nav" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <span class="glyphicon glyphicon-th-large" aria-hidden="true"></span> Flexbox-101
+          </a>
+        </div>
+
+        <!-- Navigation Link -->
+        <div class="collapse navbar-collapse" id="flex-nav">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="">Flex Container</a></li>
+            <li><a href="">Flex Item</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid wrapper">
+      <div class="row content">
+        <!-- Sidebar -->
+        <div class="col-md-2 property-sidebar">
+          <h3 class="space-mono text-center">Container Properties</h3>
+          <hr>
+          <ul class="nav nav-pills nav-stacked text-center">
+            <li ><a href="container-flex-direction.html">flex-direction</a></li>
+            <li><a href="container-flex-wrap.html">flex-wrap</a></li>
+            <li><a href="container-justify-content.html">justify-content</a></li>
+            <li><a href="container-align-items.html">align-items</a></li>
+            <li class="active"><a href="container-align-content.html">align-content</a></li>
+          </ul>
+        </div>
+        <!-- Main Body -->
+        <div class="col-md-10 main">
+          <!-- Value navigation -->
+          <div class="row value-nav">
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                <h2 class="space-mono">align-content</h2>
+              </div>
+              <div class="panel-body">
+                <p>The align-content property aligns a flex container’s lines within the flex container when there is extra space in the cross-axis, similar to how justify-content aligns individual items within the main-axis..</p>
+                <div class="text-center">
+                  <label for="opt-start" class="checkbox-inline">
+                    <input type="radio" id="opt-start" name="options" checked> flex-start
+                  </label>
+                  <label for="opt-end" class="checkbox-inline">
+                    <input type="radio" id="opt-end" name="options"> flex-end
+                  </label>
+                  <label for="opt-center" class="checkbox-inline">
+                    <input type="radio" id="opt-center" name="options"> center
+                  </label>
+                  <label for="opt-stretch" class="checkbox-inline">
+                    <input type="radio" id="opt-stretch" name="options"> stretch
+                  </label>
+                  <label for="opt-space-b" class="checkbox-inline">
+                    <input type="radio" id="opt-space-b" name="options"> space-between
+                  </label>
+                  <label for="opt-space-a" class="checkbox-inline">
+                    <input type="radio" id="opt-space-a" name="options"> space-around
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row child-maker text-right">
+            <div class="sliders">
+              <!-- Child Width -->
+              <label for="slider-width">Child Width</label>
+              <input id="slider-width" data-slider-id="slider-width" type="number" data-slider-min="5" data-slider-max="45" data-slider-step="1" data-slider-value="20"/>
+              <!-- Child Height -->
+              <label for="slider-height">Child Height</label>
+              <input id="slider-height" data-slider-id="slider-height" type="text" data-slider-min="5" data-slider-max="45" data-slider-step="1" data-slider-value="20"/>
+            </div>
+            <div class="create">
+              <button type="button" class="btn btn-danger btn-lg" id="create-child">
+                <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                Create Child
+              </button>
+            </div>
+          </div>
+          <!-- Canvas -->
+          <div class="row canvas">
+            <div class="child-card">
+              <button type="button" class="close">&times;</button>
+              <h1>1</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="../assets/jquery/dist/jquery.min.js" charset="utf-8"></script>
+  <script src="../assets/bootstrap/dist/js/bootstrap.min.js" charset="utf-8"></script>
+  <script src="../assets/js/createChild.js" charset="utf-8"></script>
+  <script src="../assets/js/align-content.js"></script>
+  <script src="../assets/seiyria-bootstrap-slider/dist/bootstrap-slider.min.js" charset="utf-8"></script>
+  <script type="text/javascript">
+    $('#slider-width').slider({
+      formattter: function(value){
+        return value;
+      }
+    })
+
+    $('#slider-height').slider({
+      formattter: function(value){
+        return value;
+      }
+    })
+  </script>
+</html>
