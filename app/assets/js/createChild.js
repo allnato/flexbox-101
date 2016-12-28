@@ -22,7 +22,7 @@ $('#create-child').click(function(event) {
 
 function getSliderWidth(){
   var size = $('#slider-width').text();
-  return parseInt(size)
+  return parseInt(size);
 }
 
 function getSliderHeight(){
